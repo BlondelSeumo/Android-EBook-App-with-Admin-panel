@@ -1,0 +1,395 @@
+﻿<!DOCTYPE HTML>
+<html lang="zxx">
+<head>
+	<title>Documentation by "DivineTechs"</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet"> 
+</head>
+<body>
+	<section id="header">
+		<header> <span><img src="images/app_icon.png" alt="" /></span>
+			<h4 id="logo">Android EBook App</h4>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#eclipseversion"><i class="fa fa-hand-o-right"></i> Which Android Studio version is needed?</a></li>
+				<li><a href="#importproject"><i class="fa fa-hand-o-right"></i> How to open the project in Android Studio?</a></li>
+				<li><a href="#packagename"><i class="fa fa-hand-o-right"></i> How to change the package name?</a></li>
+				<li><a href="#appname"><i class="fa fa-hand-o-right"></i> How to change app name?</a></li>
+				<li><a href="#admob_publisher_id"><i class="fa fa-hand-o-right"></i> Where to put Admob Publisher ID in Application?</a>
+				</li>
+				<li><a href="#admob_id"><i class="fa fa-hand-o-right"></i> How to change AdMob id?</a></li>
+				<li><a href="#serverurl"><i class="fa fa-hand-o-right"></i> How to Change Server Url in Application?</a></li>
+				<li><a href="#splash"><i class="fa fa-hand-o-right"></i> How to change Application Icon and App Color code'?</a></li>
+				<li><a href="#fcm"><i class="fa fa-hand-o-right"></i> How to generate FCM Server key and replace google-service.json?</a></li>
+				<li><a href="#onesignal_id"><i class="fa fa-hand-o-right"></i> How to Change One Signal Id And Rest Key?</a></li>
+				<li><a href="#onesignal_send_notification"><i class="fa fa-hand-o-right"></i> How to Send Notification From Admin?</a></li>
+				<li><a href="#parse"><i class="fa fa-hand-o-right"></i> How to Change One Signal Notification App Id in Application?</a></li>
+				<li><a href="#parse_icon"><i class="fa fa-hand-o-right"></i> How to Change One Signal Notification App Icon in Application?</a></li>
+				<li><a href="#payment"><i class="fa fa-hand-o-right"></i> How to Change Paypal ID & UPI Ids for Payment?</a></li>
+				<li><a href="#razorpay"><i class="fa fa-hand-o-right"></i> How to Change Razorpay key ID ?</a></li>
+				<li><a href="#sign_apk"><i class="fa fa-hand-o-right"></i> How to Generate Signed APK?</a></li>
+				<li><a href="#php_setup"><i class="fa fa-hand-o-right"></i> Server Setup (Admin Panel Configration)</a></li>
+				
+			</ul>
+		</nav>  
+	</section>
+	<div id="wrapper">
+		<div id="main">
+			<section id="one">
+				<div class="container">
+					<header class="major">
+						<h2>Android EBook App</h2>
+					</header>
+					<div class="borderTop">
+						<div class="span-6 colborder info prepend-1">
+							<p class="prepend-top"> <strong>Created:- 5 Jan 2019<br>
+								Company:- DivineTechs<br>
+								Support Email:- support@divinetechs.com<br>
+								Skype:- support.divinetechs<br>
+								Contact:- <a href="https://codecanyon.net/user/divinetechs" style='color:#0e8bcb' target="_blank">
+								Codecanyon Profile</a> </strong> </p>
+							</div>
+							<div class="span-12 last">
+								<p class="prepend-top append-0">Thank you for purchasing the app. If you have any questions that are beyond the scope of this help file, please feel free to message me via my user page contact form <a href="http://codecanyon.net/user/divinetechs" style='color:#0e8bcb' target="_blank">Here</a>. Thanks so much!</p>
+							</div>
+						</div>
+						<div class="section_bdr"></div>	
+
+						<section id="eclipseversion">
+							<div class="container"> <br>
+								<h2>Which Android Studio version is needed?</h2>
+								<p>Latest Android Studio version is recommended, which can be downloaded from here:<br />
+									<a style="color:#0e8bcb" href="http://developer.android.com/intl/en/sdk/index.html" target="_blank">http://developer.android.com/intl/en/sdk/index.html</a> </p>
+									<span class="lightbox"> <img src="images/android_studio_ver.png" alt=""/> </span>            
+									<br>
+									<span class="lightbox"><img src="images/android_studio_ver_2.png" alt=""/> </span>            
+									<div class="section_bdr"></div>
+								</div>
+							</section>
+
+							<section id="importproject">
+								<div class="container"> <br>
+									<h2>How to Open The Project in Android Studio?</h2>
+									<ul class="feature_list">
+										<li>Open Android Studio > Open an Existing Android Studio Project > Select Your Project build. gradle file > ok </li>
+										<li>Select Project</li>
+									</ul>
+									<span class="lightbox"><img src="images/import_1.png" alt=""/> </span>
+									<span class="lightbox"><img src="images/import_2.png" alt=""/> </span>            
+									<div class="section_bdr"></div>
+								</div>
+							</section>
+
+							<section id="packagename">
+								<div class="container"> <br>
+									<h2>How to change the package name? </h2>
+									<p>You can change it easily from Android Studio. Here are the steps:</p>
+									<ul class="feature_list">
+										<li>In the Project pane, click on the little gear icon.Uncheck/Deselect the Compact Empty Middle Packages option.</li>
+										<li>Your package directory will now be broken up in individual directories.</li>
+										<li>Individually select each directory you want to rename, and: Right-click itSelect RefactorClick on RenameIn the Pop-up dialog.</li>
+										<li>Click on Rename Package instead of Rename Directory Enter the new name and hit RefactorAllow a minute to let Android Studio update all changes.</li>
+										<li>Now open your build.gradle (Usually 'app' or 'mobile'). Update the applicationId to your Package Name and Sync Gradle, if it hasn't already been updated automatically.</li>
+									</ul>
+									<p style="font-size:18px"><b>Note:</b> When renaming com in Android Studio, it might give a warning. In such case, select Rename All.</p>
+									<span class="lightbox"><img src="images/packagename_1.png" alt=""/> </span>
+									<span class="lightbox"><img src="images/packagename_2.png" alt=""/> </span>
+									<span class="lightbox"><img src="images/packagename_3.png" alt=""/> </span>
+									<span class="lightbox"><img src="images/packagename_4.png" alt=""/> </span>
+									<span class="lightbox"><img src="images/packagename_5.png" alt=""/> </span>
+									<span class="lightbox"><img src="images/packagename_6.png" alt=""/> </span>            
+									<div class="section_bdr"></div>
+								</div>
+							</section>
+
+							<section id="appname">
+								<div class="container"> <br>
+									<h2>How to change app name? </h2>
+									<ul class="feature_list">
+										<li>Open Android Studio >DanceApp > res > values > strings.xml</li>
+										<li>Enter your app name inside <b style="color:#0e8bcb">"app_name"</b> string tag:<br />
+											<code>&lt;string name="app_name"&gt;<b>E-Book App</b>&lt;/string&gt;</code></li>
+										</ul>
+										<span class="lightbox"><img src="images/app_name.png" alt=""/> </span>            
+									</div>
+								</section>
+								<div class="section_bdr"></div>
+
+								<section id="admob_publisher_id">
+									<div class="container"> <br>
+										<h2>Where to put Admob Publisher ID in Application?</h2>
+										<span class="lightbox"><img src="images/webside_admob.png" alt=""/></span>			 
+										<span class="lightbox"><img src="images/admob_id_web.png" alt=""/></span>
+										<div class="lightbox-target" id="admob_publisherIds"> <img src="images/admob_id_web.png" alt=""/> <a class="lightbox-close" href="#"></a> </div>
+									</div>
+								</section>
+								<div class="section_bdr"></div>
+
+								<section id="admob_id">
+									<div class="container"> <br>
+										<h2>How to Change AdMob id?</h2>
+										<span class="lightbox"><img src="images/admob_id_admin.png" alt=""/> </span>
+									</div>
+								</section>
+								<div class="section_bdr"></div>
+
+								<section id="serverurl">
+									<div class="container"><br>
+										<h2>How to Change Server Url in Application? </h2>
+										<ul class="feature_list">
+											<li>Open Android Studio > app > package
+												<li> now if your Sever is http://www.abc.com so your service url like that <br>
+													<b>http://abc.com/</b> <br>
+												</ul>
+												<span class="lightbox"><img src="images/change_url.png" alt=""/> </span>
+											</div>
+										</section>
+										<div class="section_bdr"></div>
+
+										<section id="splash">
+											<div class="container"> <br>
+												<h2>How to change Application Icon and App Color Code'? </h2>
+												<p> <b>How To Change Application Icon</b>
+													<ul class="feature_list">
+														<li>Open Android Studio > app > res ></li>
+														<li>Rename your icon with ic_launcher.png and paste in all mipmap folders</li>
+													</ul>
+
+													<p> <b>How To Change App Color Code</b>
+														<ul class="feature_list">
+															<li>Open Android Studio > app > res >values > color.xml</li>
+															<li>Replace your color code on color.xml file<br></li>
+														</ul>
+														<span class="lightbox"> <img src="images/app_link.png" alt=""/></span>
+														<br>
+
+														<span class="lightbox"> <img src="images/app_icon1.png" alt=""/> </span>
+														<br>
+													</p>
+												</section>
+												<div class="section_bdr"></div>
+
+												<section id="fcm">
+													<div class="container"> <br>
+														<h2>How to generate FCM server key and replace google-service.json? </h2>
+														<p> <b>Open <a href="https://console.firebase.google.com"> https://console.firebase.google.com </a></b></p>			 
+														<ul class="feature_list">
+															<li>Create New Project</li>
+															<span class="lightbox"> <img src="images/firebase1.png" alt=""/></span>
+															<span class="lightbox"> <img src="images/firebase2.png" alt=""/></span>
+															<li>Download google-service.json file and replace</li>
+															<span class="lightbox"> <img src="images/firebase6.png" alt=""/></span>
+															<span class="lightbox"> <img src="images/google_service.png" alt=""/></span>
+														</ul>
+													</div>
+												</section>
+												<div class="section_bdr"></div>
+
+												<section id="onesignal_id">
+													<div class="container"> <br>
+														<h2>How to Change One Signal Id And Rest Key?</h2>
+														<span class="lightbox"><img src="images/onesignal_webside_getid.png" alt=""/></span>
+														<span class="lightbox"><img src="images/onesignal_webside.png" alt=""/></span>
+													</div>
+												</section>
+												<div class="section_bdr"></div>
+
+												<section id="onesignal_send_notification">
+													<div class="container"> <br>
+														<h2>How to Send Notification From Admin?</h2>
+														<ul class="feature_list">
+															<li>Open Admin Panel > Notification</li>
+															<li>Enter title and message which are mandatory</li>
+															<li>Upload Image if you want to show in notificaiton. This is optional</li>
+															<li>If you want to show particular video select any video when click on notification. This is optional</li>
+															<li>Image Size Minimum - 512x256 & Maximum - 2880x1440 for Notification</li>
+															<span class="lightbox"> <img src="images/notification_admin1.png" alt=""/></span>
+														</ul>
+													</div>
+												</section>
+												<div class="section_bdr"></div>
+
+												<section id="parse">
+													<div class="container"> <br>
+														<h2>How to Change One Signal Notification App Id in Application? </h2>
+														<p> <b>Get your Google Server API key and project number.</b><br>
+															<a href='https://documentation.onesignal.com/docs/generate-a-google-server-api-key' style="color:#06F" target="_blank">https://documentation.onesignal.com/docs/generate-a-google-server-api-key</a><br>
+														</p>
+														<p><b>How to Change One Signal App Id And Sender Id</b></p>
+														<ul class="feature_list">
+															<li>Open Android Studio > App > build.gradle(Module:app)</li>
+															<li>Enter your Onesignal App id inside<b>"onesignal_app_id"</b> <br />
+																<code> onesignal_app_id =<b>"Your onesignal_app_id"</b></code></li>
+																<li>Enter your Project Number inside<b>"onesignal_google_project_number"</b> <br />
+																	<code> onesignal_google_project_number =<b>"Your Project Number"</b></code></li>
+																</ul>
+																<span class="lightbox"><img src="images/notification.png" alt=""/></span>			
+															</div>
+														</section>
+														<div class="section_bdr"></div>
+
+														<section id="parse_icon">
+															<div class="container"> <br>
+																<h2>How to Change One Signal Notification App Icon in Application? </h2>
+																<b>How to Change One Signal Notification App Icon</b>
+																<ul class="feature_list">
+																	<li>Open Android Studio > app > res </li>
+																	<li>Rename your icon with <b>ic_stat_onesignal_default.png</b> and <b>ic_onesignal_large_icon_default.png</b> paste in drawable-hdpi folders</b> <br />
+																	</ul>
+																	<span class="lightbox"><img src="images/notification_icon.png" alt=""/></span>
+																	<br>
+																</p>
+															</ul>
+														</div>
+													</section>
+													<div class="section_bdr"></div>
+
+													<section id="payment">
+														<div class="container"> <br>
+															<h2>How to Change Paypal ID & UPI Ids for Payment?</h2>
+															<ul class="feature_list">
+																<li>Open Admin panel > Settings > Payment Settings </li>
+																<li>Replace your Paypal Key & UPI IDs here as per below screenshot
+																</ul>
+																<span class="lightbox"><img src="images/payment_paypal_upi.png" alt=""/></span>
+																<br>
+															</p>
+														</ul>
+													</div>
+												</section>
+												<div class="section_bdr"></div>
+
+												<section id="razorpay">
+													<div class="container"> <br>
+														<h2>How to Change Razorpay key ID ?</h2>
+														<li>Open Xcode > Project > App > classes > config > Constant.h</li>
+															<ul class="feature_list">
+																<li>Open Admin panel > Settings > Payment Settings </li>
+																<li>Replace your Razorpay Key & UPI IDs here as per below screenshot
+																</ul>
+																<span class="lightbox"><img src="images/razorpay.png" alt=""/></span>
+																<br>
+															</p>
+														</ul>
+													</div>
+												</section>
+												<div class="section_bdr"></div>
+
+												<section id="sign_apk">
+													<div class="container"> <br>
+														<h2>How to Generate Signed APK?</h2>
+														<p><b>Create New Keystore</b></p>
+														<ul class="feature_list">
+															<li>Click Build > Generate Signed APK</li><br>
+															<span class="lightbox"> <img src="images/signapk_1.png" alt=""/> </span>
+															<li>Click On Create New or if you are updating app click choose existing</li><br>
+															<span class="lightbox"><img src="images/signapk_2.png" alt=""/> </span>
+															<li>Select Keystore Path</li>
+															<li>Enter Keystore password and confirm password</li>
+															<li>Enter any name for alias</li>
+															<li>Enter key password and confirm password</li>
+															<li>Choose Validity Years</li>
+															<li>Fill rest of the details and click OK</li><br>
+															<span class="lightbox"><img src="images/signapk_3.png" alt=""/> </span>
+															<li>Enter keystore password, alias name and key password and click next</li><br>
+															<span class="lightbox"><img src="images/signapk_4.png" alt=""/> </span>
+															<li>Choose the signed apk destination</li>
+															<li>Tick the signatures</li>
+															<li>Click Finish</li><br>
+															<span class="lightbox"> <img src="images/signapk_5.png" alt=""/> </span>              
+														</ul>
+														<p><b style="color:#ff0000;font-size:18px;">Note :- Please save the keystore and remember the keystore password, alias and key password. If you want to update app in future you have to use this keystore. With new keystore you cannot update your app</b></p>
+													</div>
+												</section>
+												<div class="section_bdr"></div>
+
+												<section id="php_setup">
+													<div class="container"> <br>
+														<h2>Server Setup (Admin Panel Configration)</h2>
+
+														<h2 id="toc" > How to Configure Webservice In Your Server?</h2>
+
+														<h1>Live Installation</h1>
+														<p>Follow the video tutorial ahead.</p>
+														<iframe width="650" height="350" src="https://www.youtube.com/embed/HOlTJnHpgDk" frameborder="0" allowfullscreen></iframe>
+
+														<ol>
+															<li>First of all find the  <b>php_web_services</b> folder from the downloaded package and upload on live server.</li>				
+															<li>Then create a database.</li>
+															<li>Import the database from the db folder.</li>
+															<li>Aftre creating database configure the <b>database.php</b> file,which is in the includes folder of your package. >> Appliction >> config >> <br>
+																<code>hostname="localhost";   //Depends on hosting, normaly localhost<br> 
+																	userName="db_user";<br>
+																	password="db_pass";<br>
+																	database="db_name";<br></code>
+																</li>
+															</ol>
+
+															<li>Open Config.php & change base_url which is in the includes folder of your package. >> Appliction >> config >> <br>
+
+																<code> $config['base_url'] = 'add your server url'; </code>
+
+
+																<p>now run the admin panel : <b>http://domain.com/php_web_services/index.php/admin</b></p>
+
+																<b>Default Login Details</b><br>
+																User: admin@gmail.com<br>
+																Pass: 12345	<br><br>
+
+																<p>Android API Base URL : <b>http://domain.com/php_web_services/index.php/api/</b></p>
+
+																<p>That’s all</P>
+																</section>
+															</section>
+
+															<!-- Footer -->
+															<section id="footer">
+																<div class="container">		    
+																	<ul class="copyright">
+																		<li>
+																			<h3><span style="color:#0e8bcb;font-style:italic">Divine</span> <span style="color:#79b800;font-style:italic">Techs</span></h3>
+																		</li>
+																		<li><a href="http://www.DivineTechs.com" target="_blank"><span style="color:#9f9f9f;font-style:italic">divinetechs</span></a></li>
+																	</ul>
+																	<div class="social_icon">
+																		<ul class="icons">
+																			<li><a href="https://www.facebook.com/divinetechs" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+																			<li><a href="https://twitter.com/_divinetechs" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+																			<li><a href="https://www.linkedin.com/company/divinetechs" target="_blank" class="icon fa fa-linkedin"><span class="label">Instagram</span></a></li>
+
+																		</ul>
+																	</div>
+																</div>
+															</section>
+														</div>
+													</section>
+												</div>
+											</div>
+											<!-- Scripts --> 
+											<script src="assets/js/jquery.min.js"></script> 
+											<script src="assets/js/jquery.scrollzer.min.js"></script> 
+											<script src="assets/js/jquery.scrolly.min.js"></script> 
+											<script src="assets/js/skel.min.js"></script> 
+											<script src="assets/js/util.js"></script> 
+											<script src="assets/js/main.js"></script> 
+											<script>
+												$(document).ready(function(){
+													$(window).scroll(function(){
+														if ($(this).scrollTop() > 100) {
+															$('.scrollup').fadeIn();
+														} else {
+															$('.scrollup').fadeOut();
+														}
+													});
+													$('.scrollup').click(function(){
+														$("html, body").animate({ scrollTop: 0 }, 600);
+														return false;
+													});
+												});
+											</script>
+											<div><a href="#" class="scrollup">Scroll</a></div>
+										</body>
+										</html>

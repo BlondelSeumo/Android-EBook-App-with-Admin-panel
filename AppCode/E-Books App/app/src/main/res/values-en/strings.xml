@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android E Book</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <!--Login-->
+
+    <string name="email">Email Address</string>
+    <string name="email_hint">Email</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Me</string>
+
+    <string name="login">Login</string>
+    <string name="skip1">Skip</string>
+    <string name="dont">Don\'t have an account ?</string>
+    <string name="signup"> Signup</string>
+    <string name="logout"> logout</string>
+    <!--End Login-->
+
+    <!--Registration-->
+
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="signup_cap">SIGN UP</string>
+    <string name="already_account">Already have an account Yet?</string>
+
+    <!--End Registration-->
+
+    <!--About Us-->
+
+    <string name="Company">Company</string>
+    <string name="website">Website</string>
+    <string name="Contact">Contact</string>
+
+    <!--End About Us-->
+
+    <!--Home-->
+
+    <string name="Category">Category</string>
+    <string name="Categories">Categories</string>
+    <string name="View_all">View All</string>
+
+
+    <string name="Top_Reading_Book">Top Reading Book</string>
+    <string name="New_Arrival_Book">New Arrival Book</string>
+    <string name="Authors">Authors</string>
+    <string name="Free_Book">Free Book</string>
+    <string name="Paid_Book">Paid Book</string>
+    <string name="Continue_Reading">Continue Reading</string>
+
+    <!--End Home-->
+
+    <!--Search-->
+
+    <string name="Search">Search</string>
+    <string name="See_All">See All</string>
+    <string name="Payment">Payment</string>
+    <string name="Please_select_any_payment_method">Please select any payment method</string>
+    <string name="CONTINUE">CONTINUE</string>
+    <string name="Books">Books</string>
+
+    <string name="Reviews">Reviews</string>
+    <string name="Downloads">Downloads</string>
+    <string name="Book_Details">Book Details</string>
+    <string name="What_is_this_book_about">What is this book about ?</string>
+
+    <string name="Related_Books">Related Books</string>
+    <string name="Comments">Comments</string>
+    <string name="Write_your_comments">Write your comments</string>
+
+    <string name="My_Purchase_Books">My Purchase Books</string>
+    <string name="ALLOW_PERMISSION">ALLOW PERMISSION</string>
+
+    <string name="wel_one">Book Details</string>
+    <string name="wel_two">Reviews</string>
+    <string name="wel_three">Downloads</string>
+    <string name="wel_four">Downloads</string>
+
+    <!--End Search-->
+
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_bookmark">Bookmark</string>
+    <string name="title_Premium">Premium</string>
+    <string name="title_settings">Settings</string>
+    <string name="isRTL">false</string>
+    <string name="internet_connection">Internet connection not available</string>
+
+    <string name="permission_desc">Now we need your permission to continue use the application perfectly</string>
+    <string name="permission_title">Everything is okey</string>
+
+    <string name="profile">Profile</string>
+    <string name="change_language">Language</string>
+    <string name="my_Purchase_book">My Purchase Books</string>
+    <string name="my_downloaded_book">My Downloaded Books</string>
+    <string name="enable_push_notification">Enable push notification</string>
+    <string name="enable_theme">Enable Day/Night mode</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="locally_cached_data">locally cached data</string>
+    <string name="Privacy_policy">Privacy policy</string>
+
+    <string name="rate_app">Rate App</string>
+    <string name="share_app">Share App</string>
+    <string name="about_us">About Us</string>
+    <string name="downloading">Downloading</string>
+
+
+</resources>

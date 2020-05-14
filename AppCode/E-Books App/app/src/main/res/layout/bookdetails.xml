@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundcolor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/backgroundcolor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txt_back"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/ic_back"
+                            android:backgroundTint="?attr/toolbarbackTint"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="@string/Book_Details"
+                        android:textColor="?attr/toolbartextcolor"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="?attr/backgroundcolor"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="300dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="@color/gray_light"
+                                    app:cardCornerRadius="8dp"
+                                    tools:ignore="MissingConstraints">
+
+                                    <ImageView
+                                        android:id="@+id/iv_thumb"
+                                        android:layout_width="120dp"
+                                        android:layout_height="160dp"
+                                        android:scaleType="fitXY" />
+
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:singleLine="true"
+                                    android:gravity="center_vertical"
+                                    android:textColor="?attr/textcolor"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_by_author"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="@dimen/text_12" />
+
+                                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                                    android:id="@+id/ratingbar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:srb_borderColor="@color/colorPrimaryDark"
+                                    app:srb_fillColor="@color/colorPrimaryDark"
+                                    app:srb_numberOfStars="5"
+                                    app:srb_rating="0"
+                                    app:srb_starSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14dp"
+                                    android:visibility="invisible" />
+
+                                <TextView
+                                    android:id="@+id/txt_category"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="23dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/round_cat"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center"
+                                    android:paddingStart="8dp"
+                                    android:paddingEnd="8dp"
+                                    android:singleLine="true"
+                                    android:textColor="?attr/textcolor"
+                                    android:textSize="12dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/txt_download_buy"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="30dp"
+                                        android:background="@drawable/round_purchase"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center"
+                                        android:minWidth="50dp"
+                                        android:paddingStart="8dp"
+                                        android:paddingEnd="8dp"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_read"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="30dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/round_sample"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center"
+                                        android:paddingStart="8dp"
+                                        android:paddingEnd="8dp"
+                                        android:singleLine="true"
+                                        android:text="Sample Book"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|start"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_bookmark"
+                                    android:layout_width="23dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/ic_bookmark"
+                                    android:backgroundTint="?attr/toolbarbackTint" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center_vertical"
+                                android:text="@string/What_is_this_book_about"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txt_descripation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:maxLines="10"
+                                android:textColor="@color/text_gray"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundcolor"
+                        android:layout_alignParentBottom="true"
+                        android:visibility="visible"></RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundcolor">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            android:background="?attr/backgroundcolor"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="1dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            app:contentPaddingBottom="0dp"
+                            tools:ignore="MissingConstraints">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/backgroundcolor"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_author_book"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="5dp"
+                                    android:text="@string/Related_Books"
+                                    android:textColor="?attr/textcolor"
+                                    android:textSize="14dp" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_related"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:minHeight="@dimen/min_height"
+                                    android:scrollbars="none"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray_light" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:paddingStart="5dp"
+                            android:text="@string/Comments"
+                            android:textColor="?attr/textcolor"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/round_comment"
+                            android:weightSum="1.0">
+
+                            <EditText
+                                android:id="@+id/et_comment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center_vertical"
+                                android:hint="@string/Write_your_comments"
+                                android:textColorHint="@color/text_gray"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:id="@+id/txt_send"
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/round_send"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:background="@drawable/ic_send"
+                                    android:rotation="320" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:minHeight="@dimen/min_height"
+                            android:scrollbars="none"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

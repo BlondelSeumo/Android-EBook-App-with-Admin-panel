@@ -1,0 +1,88 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
+    }
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.divinetechs.ebooksapp"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        android {
+            defaultConfig {
+                manifestPlaceholders = [
+                        onesignal_app_id               : '6e703206-bd5e-4aba-9dee-4ddcd6d96db6',
+                        onesignal_google_project_number: 'REMOTE'
+                ]
+            }
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation files('libs/PayPalAndroidSDK.jar')
+    // RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "com.squareup.picasso:picasso:2.4.0"
+
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+
+    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.folioreader:folioreader:0.5.4'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    implementation 'com.razorpay:checkout:1.5.12'
+    implementation 'com.shreyaspatil:EasyUpiPayment:1.1'
+
+    configurations.matching { it.name == '_internal_aapt2_binary' }.all { config ->
+        config.resolutionStrategy.eachDependency { details ->
+            details.useVersion("3.3.2-5309881")
+        }
+    }
+}

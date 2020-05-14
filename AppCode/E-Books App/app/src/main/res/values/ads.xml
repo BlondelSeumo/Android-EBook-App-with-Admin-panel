@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="admob_main_id" tools:ignore="MissingTranslation">ca-app-pub-3899560992752771~5875212205</string>
+
+</resources>

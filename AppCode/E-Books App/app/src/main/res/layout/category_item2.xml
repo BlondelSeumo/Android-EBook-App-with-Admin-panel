@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_thumb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:riv_border_color="@color/colorPrimaryDark"
+                app:riv_border_width="1dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+                app:riv_tile_mode="clamp" />
+
+            <TextView
+                android:id="@+id/txt_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_regular"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:alpha="0.1"
+                android:textIsSelectable="true"
+                android:textSize="60dp" />
+
+            <TextView
+                android:id="@+id/txt_bookname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_medium"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/text_12" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

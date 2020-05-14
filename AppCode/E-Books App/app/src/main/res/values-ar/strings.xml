@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">الروبوت الكتاب الإلكتروني</string>
+
+    <string name="next">التالى</string>
+    <string name="skip">تخطى</string>
+    <string name="start">فهمتك</string>
+
+    <!--Login-->
+
+    <string name="email">عنوان البريد الإلكتروني</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="remember">تذكرنى</string>
+
+    <string name="login">تسجيل الدخول</string>
+    <string name="skip1">تخطى</string>
+    <string name="dont">ليس لديك حساب؟</string>
+    <string name="signup"> سجل</string>
+    <string name="logout"> تسجيل خروج</string>
+    <!--End Login-->
+
+    <!--Registration-->
+
+    <string name="full_name">الاسم الكامل</string>
+    <string name="phone">هاتف</string>
+    <string name="signup_cap">سجل</string>
+    <string name="already_account">لديك بالفعل حساب بعد؟</string>
+
+    <!--End Registration-->
+
+    <!--About Us-->
+
+    <string name="Company">شركة</string>
+    <string name="website">موقع الكتروني</string>
+    <string name="Contact">اتصل</string>
+
+    <!--End About Us-->
+
+    <!--Home-->
+
+    <string name="Category">الفئة</string>
+    <string name="Categories">التصنيفات</string>
+    <string name="View_all">عرض الكل</string>
+
+
+    <string name="Top_Reading_Book">أعلى كتاب القراءة</string>
+    <string name="New_Arrival_Book">كتاب وصول جديد</string>
+    <string name="Authors">المؤلفون</string>
+    <string name="Free_Book">كتاب مجاني</string>
+    <string name="Paid_Book">كتاب مدفوع</string>
+    <string name="Continue_Reading">أكمل القراءة</string>
+
+    <!--End Home-->
+
+    <!--Search-->
+
+    <string name="Search">بحث</string>
+    <string name="See_All">اظهار الكل</string>
+    <string name="Payment">دفع</string>
+    <string name="Please_select_any_payment_method">يرجى اختيار أي طريقة الدفع</string>
+    <string name="CONTINUE">استمر</string>
+    <string name="Books">كتب</string>
+
+    <string name="Reviews">التعليقات</string>
+    <string name="Downloads">التحميلات</string>
+    <string name="Book_Details">تفاصيل الكتاب</string>
+    <string name="What_is_this_book_about">عن ماذا هذا الكتاب ؟</string>
+
+    <string name="Related_Books">كتب ذات صلة</string>
+    <string name="Comments">تعليقات</string>
+    <string name="Write_your_comments">اكتب تعليقاتك</string>
+
+    <string name="My_Purchase_Books">بلدي شراء الكتب</string>
+    <string name="ALLOW_PERMISSION">السماح إذن</string>
+
+    <string name="wel_one">تفاصيل الكتاب</string>
+    <string name="wel_two">التعليقات</string>
+    <string name="wel_three">التحميلات</string>
+    <string name="wel_four">التحميلات</string>
+
+    <!--End Search-->
+
+    <string name="title_home">الصفحة الرئيسية</string>
+    <string name="title_search">بحث</string>
+    <string name="title_bookmark">المرجعية</string>
+    <string name="title_Premium">الممتازة</string>
+    <string name="title_settings">الإعدادات</string>
+    <string name="isRTL">خاطئة</string>
+    <string name="internet_connection">اتصال الإنترنت غير متوفر</string>
+
+    <string name="permission_desc">نحن الآن بحاجة إلى إذنك لمواصلة استخدام التطبيق بشكل مثالي</string>
+    <string name="permission_title">كل شيء على ما يرام</string>
+
+    <string name="profile">الملف الشخصي</string>
+    <string name="change_language">لغة</string>
+    <string name="my_Purchase_book">بلدي شراء الكتب</string>
+    <string name="my_downloaded_book">كتبي التي تم تنزيلها</string>
+    <string name="enable_push_notification">تمكين إشعار الدفع</string>
+    <string name="enable_theme">تمكين وضع يوم / ليلة</string>
+    <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
+    <string name="locally_cached_data">البيانات المخزنة مؤقتا محليا</string>
+    <string name="Privacy_policy">سياسة خاصة</string>
+
+
+    <string name="rate_app">قيم التطبيق</string>
+    <string name="share_app">شارك التطبيق</string>
+    <string name="about_us">معلومات عنا</string>
+    <string name="downloading">جارى التحميل</string>
+
+</resources>

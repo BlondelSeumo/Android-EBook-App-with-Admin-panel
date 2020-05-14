@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android E Book</string>
+
+    <string name="next">SUIVANTE</string>
+    <string name="skip">SAUTER</string>
+    <string name="start">JE L\'AI</string>
+
+    <!--Login-->
+
+    <string name="email">Adresse e-mail</string>
+    <string name="email_hint">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="remember">Souviens-toi de moi</string>
+
+    <string name="login">S\'identifier</string>
+    <string name="skip1">Sauter</string>
+    <string name="dont">Vous n\'avez pas de compte?</string>
+    <string name="signup"> S\'inscrire</string>
+    <string name="logout"> Se déconnecter</string>
+    <!--End Login-->
+
+    <!--Registration-->
+
+    <string name="full_name">Nom complet</string>
+    <string name="phone">Téléphone</string>
+    <string name="signup_cap">S\'INSCRIRE</string>
+    <string name="already_account">Vous avez déjà un compte?</string>
+
+    <!--End Registration-->
+
+    <!--About Us-->
+
+    <string name="Company">Entreprise</string>
+    <string name="website">Site Internet</string>
+    <string name="Contact">Contact</string>
+
+    <!--End About Us-->
+
+    <!--Home-->
+
+    <string name="Category">Catégorie</string>
+    <string name="Categories">Les catégories</string>
+    <string name="View_all">Voir tout</string>
+
+
+    <string name="Top_Reading_Book">Meilleur livre de lecture</string>
+    <string name="New_Arrival_Book">Nouveau livre d\'arrivée</string>
+    <string name="Authors">Auteures</string>
+    <string name="Free_Book">Livre gratuit</string>
+    <string name="Paid_Book">Livre payant</string>
+    <string name="Continue_Reading">Continuer la lecture</string>
+
+    <!--End Home-->
+
+    <!--Search-->
+
+    <string name="Search">Chercher</string>
+    <string name="See_All">Voir tout</string>
+    <string name="Payment">Paiement</string>
+    <string name="Please_select_any_payment_method">Veuillez sélectionner n\'importe quel mode de paiement</string>
+    <string name="CONTINUE">CONTINUER</string>
+    <string name="Books">Livres</string>
+
+    <string name="Reviews">Commentaires</string>
+    <string name="Downloads">Téléchargements</string>
+    <string name="Book_Details">Détails du livre</string>
+    <string name="What_is_this_book_about">De quoi parle ce livre ?</string>
+
+    <string name="Related_Books">Livres connexes</string>
+    <string name="Comments">commentaires</string>
+    <string name="Write_your_comments">Écrivez vos commentaires</string>
+
+    <string name="My_Purchase_Books">Mes livres d\'achat</string>
+    <string name="ALLOW_PERMISSION">AUTORISER LA PERMISSION</string>
+
+    <string name="wel_one">Détails du livre</string>
+    <string name="wel_two">Commentaires</string>
+    <string name="wel_three">Téléchargements</string>
+    <string name="wel_four">Téléchargements</string>
+
+    <!--End Search-->
+
+    <string name="title_home">Accueil</string>
+    <string name="title_search">Chercher</string>
+    <string name="title_bookmark">Signet</string>
+    <string name="title_Premium">Prime</string>
+    <string name="title_settings">Réglages</string>
+    <string name="isRTL">faux</string>
+    <string name="internet_connection">Connexion Internet non disponible</string>
+
+    <string name="permission_desc">Maintenant, nous avons besoin de votre autorisation pour continuer à utiliser l\'application parfaitement</string>
+    <string name="permission_title">Tout va bien</string>
+
+    <string name="profile">Profil</string>
+    <string name="change_language">Langue</string>
+    <string name="my_Purchase_book">Mes livres d\'achat</string>
+    <string name="my_downloaded_book">Mes livres téléchargés</string>
+    <string name="enable_push_notification">Activer la notification push</string>
+    <string name="enable_theme">Activer le mode jour / nuit</string>
+    <string name="clear_cache">Vider le cache</string>
+    <string name="locally_cached_data">données mises en cache localement</string>
+    <string name="Privacy_policy">Politique de confidentialité</string>
+
+    <string name="rate_app">Application de taux</string>
+    <string name="share_app">Partager l\'application</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="downloading">Téléchargement</string>
+
+
+</resources>
