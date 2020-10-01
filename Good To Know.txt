@@ -1,5 +1,5 @@
 
 In case you face errors, go to 
 
-ebook/application/models/Adminmodel.php 
+ebook/applications/models/Adminmodel.php 
 and remove all the comments the code will work
